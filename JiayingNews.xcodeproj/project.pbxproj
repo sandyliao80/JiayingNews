@@ -13,6 +13,9 @@
 		5C93BE5219F6A6C1008F0B47 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C93BE5119F6A6C1008F0B47 /* Images.xcassets */; };
 		5C93BE5519F6A6C1008F0B47 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C93BE5319F6A6C1008F0B47 /* LaunchScreen.xib */; };
 		5C93BE6119F6A6C1008F0B47 /* JiayingNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C93BE6019F6A6C1008F0B47 /* JiayingNewsTests.swift */; };
+		5C93BE8819F6C186008F0B47 /* Alamofire-SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C93BE8619F6C186008F0B47 /* Alamofire-SwiftyJSON.swift */; };
+		5C93BE8B19F6C2AC008F0B47 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C93BE8A19F6C2AC008F0B47 /* SwiftyJSON.swift */; };
+		5CB6BA8119F9708B00492F2D /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CB6BA8019F9708B00492F2D /* NewsTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,6 +25,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 5C93BE4419F6A6C0008F0B47;
 			remoteInfo = JiayingNews;
+		};
+		5C93BE6F19F6B030008F0B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C93BE6A19F6B030008F0B47 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = Alamofire;
+		};
+		5C93BE7119F6B030008F0B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C93BE6A19F6B030008F0B47 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = AlamofireTests;
+		};
+		5C93BE7519F6B12E008F0B47 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C93BE6A19F6B030008F0B47 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = Alamofire;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,6 +60,10 @@
 		5C93BE5A19F6A6C1008F0B47 /* JiayingNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JiayingNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C93BE5F19F6A6C1008F0B47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C93BE6019F6A6C1008F0B47 /* JiayingNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JiayingNewsTests.swift; sourceTree = "<group>"; };
+		5C93BE6A19F6B030008F0B47 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		5C93BE8619F6C186008F0B47 /* Alamofire-SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alamofire-SwiftyJSON.swift"; sourceTree = "<group>"; };
+		5C93BE8A19F6C2AC008F0B47 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		5CB6BA8019F9708B00492F2D /* NewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +87,7 @@
 		5C93BE3C19F6A6C0008F0B47 = {
 			isa = PBXGroup;
 			children = (
+				5C93BE6A19F6B030008F0B47 /* Alamofire.xcodeproj */,
 				5C93BE4719F6A6C0008F0B47 /* JiayingNews */,
 				5C93BE5D19F6A6C1008F0B47 /* JiayingNewsTests */,
 				5C93BE4619F6A6C0008F0B47 /* Products */,
@@ -77,12 +106,14 @@
 		5C93BE4719F6A6C0008F0B47 /* JiayingNews */ = {
 			isa = PBXGroup;
 			children = (
+				5C93BE8419F6C139008F0B47 /* Lib */,
 				5C93BE4A19F6A6C1008F0B47 /* AppDelegate.swift */,
 				5C93BE4C19F6A6C1008F0B47 /* ViewController.swift */,
 				5C93BE4E19F6A6C1008F0B47 /* Main.storyboard */,
 				5C93BE5119F6A6C1008F0B47 /* Images.xcassets */,
 				5C93BE5319F6A6C1008F0B47 /* LaunchScreen.xib */,
 				5C93BE4819F6A6C1008F0B47 /* Supporting Files */,
+				5CB6BA8019F9708B00492F2D /* NewsTableViewCell.xib */,
 			);
 			path = JiayingNews;
 			sourceTree = "<group>";
@@ -112,6 +143,32 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5C93BE6B19F6B030008F0B47 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C93BE7019F6B030008F0B47 /* Alamofire.framework */,
+				5C93BE7219F6B030008F0B47 /* AlamofireTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C93BE8419F6C139008F0B47 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				5C93BE8519F6C186008F0B47 /* SwiftyJSON */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		5C93BE8519F6C186008F0B47 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				5C93BE8A19F6C2AC008F0B47 /* SwiftyJSON.swift */,
+				5C93BE8619F6C186008F0B47 /* Alamofire-SwiftyJSON.swift */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +183,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				5C93BE7619F6B12E008F0B47 /* PBXTargetDependency */,
 			);
 			name = JiayingNews;
 			productName = JiayingNews;
@@ -179,6 +237,12 @@
 			mainGroup = 5C93BE3C19F6A6C0008F0B47;
 			productRefGroup = 5C93BE4619F6A6C0008F0B47 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5C93BE6B19F6B030008F0B47 /* Products */;
+					ProjectRef = 5C93BE6A19F6B030008F0B47 /* Alamofire.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				5C93BE4419F6A6C0008F0B47 /* JiayingNews */,
@@ -187,6 +251,23 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		5C93BE7019F6B030008F0B47 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 5C93BE6F19F6B030008F0B47 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5C93BE7219F6B030008F0B47 /* AlamofireTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AlamofireTests.xctest;
+			remoteRef = 5C93BE7119F6B030008F0B47 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		5C93BE4319F6A6C0008F0B47 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -194,6 +275,7 @@
 			files = (
 				5C93BE5019F6A6C1008F0B47 /* Main.storyboard in Resources */,
 				5C93BE5519F6A6C1008F0B47 /* LaunchScreen.xib in Resources */,
+				5CB6BA8119F9708B00492F2D /* NewsTableViewCell.xib in Resources */,
 				5C93BE5219F6A6C1008F0B47 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +295,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C93BE4D19F6A6C1008F0B47 /* ViewController.swift in Sources */,
+				5C93BE8819F6C186008F0B47 /* Alamofire-SwiftyJSON.swift in Sources */,
 				5C93BE4B19F6A6C1008F0B47 /* AppDelegate.swift in Sources */,
+				5C93BE8B19F6C2AC008F0B47 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +316,11 @@
 			isa = PBXTargetDependency;
 			target = 5C93BE4419F6A6C0008F0B47 /* JiayingNews */;
 			targetProxy = 5C93BE5B19F6A6C1008F0B47 /* PBXContainerItemProxy */;
+		};
+		5C93BE7619F6B12E008F0B47 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			targetProxy = 5C93BE7519F6B12E008F0B47 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,6 +494,7 @@
 				5C93BE6619F6A6C1008F0B47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5C93BE6719F6A6C1008F0B47 /* Build configuration list for PBXNativeTarget "JiayingNewsTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +503,7 @@
 				5C93BE6919F6A6C1008F0B47 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
